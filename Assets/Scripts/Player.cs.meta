@@ -3,7 +3,8 @@ guid: 74bfadaf5decc994e831af94ee816a06
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - _laserPrefab: {fileID: 7546051513825240078, guid: 2ed96dced5079334b980527de252fdfc, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
