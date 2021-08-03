@@ -5,6 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - _laserPrefab: {fileID: 7546051513825240078, guid: 2ed96dced5079334b980527de252fdfc, type: 3}
+  - _tripleShotPrefab: {fileID: 3786244030084637708, guid: d0fc1b9ecc361744dac99fd14b9bef7b, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
