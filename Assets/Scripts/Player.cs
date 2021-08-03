@@ -19,6 +19,10 @@ public class Player : MonoBehaviour
     GameObject _tripleShotPrefab;
 
     private bool _isTripleShotActive = false;
+
+    [SerializeField]
+    private float _speedMultiplier = 2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -97,5 +101,17 @@ public class Player : MonoBehaviour
         
         yield return new WaitForSeconds(5.0f);
         _isTripleShotActive = false;
+    }
+
+    public void SpeedBoostActive()
+    {
+        _speed *= _speedMultiplier;
+        StartCoroutine(SpeedBoostPowerDown());
+    }
+
+    IEnumerator SpeedBoostPowerDown()
+    {
+        yield return new WaitForSeconds(5.0f);
+        _speed /= _speedMultiplier;
     }
 }
