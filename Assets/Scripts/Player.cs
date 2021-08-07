@@ -29,6 +29,10 @@ public class Player : MonoBehaviour
     private float _speedMultiplier = 2;
 
     [SerializeField]
+    private GameObject _rightEngine, _leftEngine;
+    
+
+    [SerializeField]
     private GameObject _shields;
 
     private UIManager _uiManager;
@@ -105,6 +109,15 @@ public class Player : MonoBehaviour
         }
         // return
         _lives--;
+        if(_lives== 2)
+        {
+            _leftEngine.SetActive(true);
+        }
+        else if (_lives ==1)
+        {
+            _rightEngine.SetActive(true);
+        }
+     
         _uiManager.UpdateLives(_lives);
         if(_lives < 1)
         {
